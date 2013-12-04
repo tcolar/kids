@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <script src="jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="math.js"></script>
+    <link href="math.css" rel="stylesheet" type="text/css">
+  </head>
+
+
+  <hr/>
+
+  <div class="settings">
+    <input type="checkbox" id="additions" CHECKED></input> Additions.
+    Min cols: <select id="add_min">
+    </select>
+    Max cols: <select id="add_max">
+    </select>
+    Min digit: <select id="add_ld">
+    </select>
+    Max digit: <select id="add_td">
+    </select>
+    Lines: <select id="add_nbs">
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <hr>
+    <input type="checkbox" id="substractions" CHECKED></input> Substractions.
+    Min cols: <select id="sub_min">
+    </select>
+    Max cols: <select id="sub_max">
+    </select>
+    Min digit: <select id="sub_ld">
+    </select>
+    Max digit: <select id="sub_td">
+    </select>
+    <hr>
+    <input type="checkbox" id="multiplications"></input> Multiplications.
+    Top Digits: <select id="mul_top">
+    </select>
+    Bottom Digits: <select id="mul_bottom">
+    </select>
+    Min digit: <select id="mul_ld">
+    </select>
+    Max digit: <select id="mul_td">
+    </select>
+    <hr/>
+    <button id="start" onclick="next()">Start</button>
+    <hr/>
+  </div>
+
+  <div class="work">
+    <table id="operation">
+    </table>
+  </div>
+  <h3>Points: <span id="score"></span></h3>
+  <hr/>
+  <img src="cat.jpg"/>
+  <img src="sealion.jpg" width="260px"/>
+</html>
